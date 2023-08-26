@@ -3,6 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Welcome to my portfolio website! I am a skilled Front-end Developer & UI/UX Designer & Branding Designer with 1 years of experience. Explore my diverse range of projects showcasing my expertise in design and development. From my clients on freelancing sites, witness my attention to detail, creativity, and commitment to delivering exceptional results. Contact me today to discuss potential collaborations and bring your vision to life.">
+        <meta name="keywords" content="merna, merna mamdouh, merna mamdouh mounir, merna's portfolio, merna portfolio, portfolio merna"/>
+        <meta name="author" content="Merna Mamdouh"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>Merna's Portfolio</title>
 
         <!--==================== FAVICON ====================-->
         <link rel="icon" type="image/x-icon" href="assets/img/logoo.png"/>
@@ -15,45 +20,43 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
-
-        <title>Merna's Portfolio</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <img src="assets/img/logoo.png" alt="logo" class="logo">
-                <a href="#home" class="nav__logo">Merna Mamdouh</a>
+                <img src="assets/img/logoo.png" alt="logo" class="logo animate">
+                <a href="#home" class="nav__logo animate">Merna Mamdouh</a>
                 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
+                            <a href="#home" class="nav__link active-link animate">
                                 <i class="uil uil-estate nav__icon"></i> Home
                             </a>                            
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">
+                            <a href="#about" class="nav__link animate">
                                 <i class="uil uil-user nav__icon"></i> About
                             </a>
                         </li>                        
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">
+                            <a href="#skills" class="nav__link animate">
                                 <i class="uil uil-file-alt nav__icon"></i> Skills
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#services" class="nav__link">
+                            <a href="#services" class="nav__link animate">
                                 <i class="uil uil-briefcase-alt nav__icon"></i> Services
                             </a>
                         </li>                        
                         <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
+                            <a href="#portfolio" class="nav__link animate">
                                 <i class="uil uil-scenery nav__icon"></i> Portfolio
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">
+                            <a href="#contact" class="nav__link animate">
                                 <i class="uil uil-message nav__icon"></i> Contact Me
                             </a>
                         </li>                        
@@ -61,7 +64,7 @@
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
 
-                <div class="nav__btns">
+                <div class="nav__btns animate">
                     <!-- Theme change button -->
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
 
@@ -78,7 +81,7 @@
             <section class="home section" id="home">
                 <div class="home__container container grid">
                     <div class="home__content grid">
-                        <div class="home__social">
+                        <div class="home__social top">
                             <a href="mailto:mernamamdouh2@gmail.com" target="_blank" class="home__social-icon">
                                 <i class="uil uil-envelope"></i>
                             </a>
@@ -90,7 +93,7 @@
                             </a>
                         </div>
                     
-                        <div class="home__img">
+                        <div class="home__img right">
                             <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <mask id="mask0" mask-type="alpha">
                                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -104,11 +107,12 @@
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
                                     <image class="home__blob-img" x='22' y='-8' xlink:href="assets/img/profile.png"/>
+                                    <!-- <image class="home__blob-img" x='-8' y='-100' xlink:href="assets/img/IMG_20230827_010406_928.png"/> -->
                                 </g>
                             </svg>
                         </div>
                         
-                        <div class="home__data">
+                        <div class="home__data left">
                             <h1 class="home__title">Hi, I'am Merna</h1>
                             <h3 class="home__subtitle" id="jobTitle">Front-end Developer</h3>
                             <p class="home__description">High level experience in web design and development
@@ -119,7 +123,7 @@
                         </div>
                     </div>
 
-                    <div class="home__scroll">
+                    <div class="home__scroll left">
                         <a href="#about" class="home__scroll-button button--flex">
                             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                             <span class="home__scroll-name">Scroll Down</span>
@@ -135,8 +139,8 @@
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">My introduction</span>
                 <div class="about__container container grid">
-                    <img src="assets/img/about2.jpeg" alt="about__img" class="about__img">
-                    <div class="about__data">
+                    <img src="assets/img/about2.jpeg" alt="about__img" class="about__img left">
+                    <div class="about__data right">
                         <p class="about__description">I am front-end developer. I have a wide knowledge and 
                             sufficient experience in creating dynamic and easy-to-use sites and applications, 
                             work in web technologies and UI/UX design, and provide high-quality work. 
@@ -172,7 +176,7 @@
                 <h2 class="section__title">Skills</h2>
                 <span class="section__subtitle">My technical level</span>
                 <div class="skills__container container grid">
-                    <div>
+                    <div class="left">
                         <!--==================== SKILLS 1 ====================-->
                         <div class="skills__content skills__open">
                             <div class="skills__header">
@@ -304,7 +308,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="right">
                         <!--==================== SKILLS 3 ====================-->
                         <div class="skills__content skills__close">
                             <div class="skills__header">
@@ -409,11 +413,11 @@
                 <span class="section__subtitle">My personal journey</span>
                 <div class="qualification__container container">
                     <div class="qualification__tabs">
-                        <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <div class="qualification__button button--flex qualification__active left" data-target='#education'>
                             <i class="uil uil-graduation-cap qualification__icon"></i>
                             Education
                         </div>
-                        <div class="qualification__button button--flex" data-target='#work'>
+                        <div class="qualification__button button--flex right" data-target='#work'>
                             <i class="uil uil-briefcase-alt qualification__icon"></i>
                             Work
                         </div>
@@ -423,7 +427,7 @@
                         <div class="qualification__content qualification__active" data-content id="education">
                             <!--==================== QUALIFICATION 1 ====================-->
                             <div class="qualification__data">
-                                <div>
+                                <div class="left">
                                     <h3 class="qualification__title">“Full Stack Web Development Using Python” Track</h3>
                                     <span class="qualification__subtitle">Information Technology Institute (ITI)</span>
                                     <div class="qualification__calendar">
@@ -443,7 +447,7 @@
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
                                 </div>
-                                <div>
+                                <div class="right">
                                     <h3 class="qualification__title">“System Administration” Track</h3>
                                     <span class="qualification__subtitle">Information Technology Institute (ITI)</span>
                                     <div class="qualification__calendar">
@@ -454,7 +458,7 @@
                             </div>
                             <!--==================== QUALIFICATION 3 ====================-->
                             <div class="qualification__data">
-                                <div>
+                                <div class="left">
                                     <h3 class="qualification__title">“IT Administrator” Track</h3>
                                     <span class="qualification__subtitle">Information Technology Institute (ITI)</span>
                                     <div class="qualification__calendar">
@@ -474,7 +478,7 @@
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
                                 </div>
-                                <div>
+                                <div class="right">
                                     <h3 class="qualification__title">“Google IT Support Professional Certificate” Track</h3>
                                     <span class="qualification__subtitle">Information Technology Institute (ITI)</span>
                                     <div class="qualification__calendar">
@@ -485,7 +489,7 @@
                             </div>
                             <!--==================== QUALIFICATION 5 ====================-->
                             <div class="qualification__data">
-                                <div>
+                                <div class="left">
                                     <h3 class="qualification__title">Communication and Electronics Engineering</h3>
                                     <span class="qualification__subtitle">High Institute of Engineering and Technology in Al-Tod - Luxor</span>
                                     <div class="qualification__calendar">
@@ -497,13 +501,13 @@
                                     <span class="qualification__rounder"></span>
                                 </div>
                             </div>
-                            </div>
+                        </div>
                         
                         <!--==================== QUALIFICATION CONTENT 2 ====================-->
                         <div class="qualification__content" data-content id="work">
                             <!--==================== QUALIFICATION 1 ====================-->
                             <div class="qualification__data">
-                                <div>
+                                <div class="leftt">
                                     <h3 class="qualification__title">Front-end Developer</h3>
                                     <span class="qualification__subtitle">Freelance Job</span>
                                     <div class="qualification__calendar">
@@ -523,7 +527,7 @@
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
                                 </div>
-                                <div>
+                                <div class="rightt">
                                     <h3 class="qualification__title">UI/UX Designer</h3>
                                     <span class="qualification__subtitle">Freelance Job</span>
                                     <div class="qualification__calendar">
@@ -534,7 +538,7 @@
                             </div>
                             <!--==================== QUALIFICATION 3 ====================-->
                             <div class="qualification__data">
-                                <div>
+                                <div class="leftt">
                                     <h3 class="qualification__title">Graphic Designer</h3>
                                     <span class="qualification__subtitle">Freelance Job</span>
                                     <div class="qualification__calendar">
@@ -559,15 +563,16 @@
                 <div class="services__container container grid">
                     <!--==================== SERVICES 1 ====================-->
                     <div class="services__content">
-                        <div>
-                            <i class="uil uil-web-grid services__icon"></i>
-                            <h3 class="services__title">Ui/Ux <br> Designer</h3>
+                        <div class="left">
+                            <div>
+                                <i class="uil uil-web-grid services__icon"></i>
+                                <h3 class="services__title">Ui/Ux <br> Designer</h3>
+                            </div>
+                            <span class="button button--flex button--small button--link services__button">
+                                View More
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
                         </div>
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
                         <div class="services__modal">
                             <div class="services__modal-content">
                                 <h4 class="services__modal-title">Ui/Ux <br> Designer</h4>
@@ -608,15 +613,16 @@
 
                     <!--==================== SERVICES 2 ====================-->
                     <div class="services__content">
-                        <div>
-                           <i class="uil uil-arrow services__icon"></i>
-                            <h3 class="services__title">Frontend <br> Developer</h3>
+                        <div class="top">
+                            <div>
+                                <i class="uil uil-arrow services__icon"></i>
+                                 <h3 class="services__title">Frontend <br> Developer</h3>
+                             </div>
+                             <span class="button button--flex button--small button--link services__button">
+                                 View More
+                                 <i class="uil uil-arrow-right button__icon"></i>
+                             </span>
                         </div>
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
                         <div class="services__modal">
                             <div class="services__modal-content">
                                 <h4 class="services__modal-title">Frontend <br> Developer</h4>
@@ -649,15 +655,16 @@
                     
                     <!--==================== SERVICES 3 ====================-->
                     <div class="services__content">
-                        <div>
-                            <i class="uil uil-pen services__icon"></i>
-                            <h3 class="services_title">Branding <br> Designer</h3>
+                        <div class="right">
+                            <div>
+                                <i class="uil uil-pen services__icon"></i>
+                                <h3 class="services_title">Branding <br> Designer</h3>
+                            </div>
+                            <span class="button button--flex button--small button--link services__button">
+                                View More
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
                         </div>
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
                         <div class="services__modal">
                             <div class="services__modal-content">
                                 <h4 class="services__modal-title">Branding <br> Designer</h4>
@@ -781,7 +788,7 @@
             <section class="project section">
                 <div class="project__bg">
                     <div class="project__container container grid">
-                        <div class="project__data">
+                        <div class="project__data left">
                             <h2 class="project__title">You have a new project</h2>
                             <p class="project__description">Contact me now and get a 10% discount on your new project.</p>
                             <a href="#contact" class="button button--flex button--white">
@@ -789,7 +796,7 @@
                                 <i class="uil uil-message project__icon button__icon"></i>
                             </a>
                         </div>
-                        <img src="assets/img/profile.png" alt="project__img" class="project__img"/>
+                        <img src="assets/img/profile.png" alt="project__img" class="project__img top"/>
                     </div>
                 </div>                
             </section>
@@ -883,7 +890,7 @@
                 <h2 class="section__title">Contact Me</h2>
                 <span class="section__subtitle">Get in touch</span>
                 <div class="contact__container container grid">
-                    <div>
+                    <div class="left">
                         <div class="contact__information">
                             <i class="uil uil-phone contact__icon"></i>
                             <div>
@@ -926,7 +933,7 @@
                         </div>
                     </div>
                  
-                    <form action="https://formspree.io/f/mwkdonok" method="post" class="contact__form grid">
+                    <form action="https://formspree.io/f/mwkdonok" method="post" class="contact__form grid right">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="name" class="contact__label">Name</label>
@@ -959,7 +966,7 @@
         <!--==================== FOOTER ====================-->
         <footer class="footer">
             <div class="footer__bg">
-                <div class="footer__container container grid">
+                <div class="footer__container container grid top">
                     <div>
                         <h1 class="footer__title">Merna</h1>
                         <span class="footer__subtitle" id="jobTitle1">Front-end Developer</span>
@@ -999,17 +1006,20 @@
                     </div>
                 </div>
 
-                <p class="footer__copy">&#169; Merna's Portfolio - All right reserved</p>
+                <p class="footer__copy bottom">&#169; Merna's Portfolio - All right reserved</p>
             </div>            
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
+        <a href="#home" class="scrollup bottom" id="scroll-up">
             <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!-- scroll reveal javascript link -->
+        <script src="assets/js/scrollreveal.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>

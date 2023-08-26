@@ -21,7 +21,36 @@ function changeJobTitle() {
   }, 500);
 }
 setInterval(changeJobTitle, 2000);
+// -----------------------------
+// function isInViewport(element) {
+//   const rect = element.getBoundingClientRect();
+//   return (
+//     rect.top >= 0 &&
+//     rect.left >= 0 &&
+//     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//   );
+// }
 
+// function animateOnScroll() {
+//   const homeSection = document.getElementById('home');
+//   const homeContent = document.querySelector('.home__content');
+//   const homeSocial = document.querySelector('.home__social');
+//   const homeData = document.querySelector('.home__data');
+//   const homeScroll = document.querySelector('.home__scroll');
+
+//   if (isInViewport(homeSection)) {
+//     homeContent.classList.add('animate');
+//     homeSocial.classList.add('animate');
+//     homeData.classList.add('animate');
+//     homeScroll.classList.add('animate');
+//   }
+// }
+
+// window.addEventListener('scroll', animateOnScroll);
+// window.addEventListener('resize', animateOnScroll);
+// window.addEventListener('load', animateOnScroll);
+// -----------------------------
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
@@ -69,18 +98,29 @@ skillsHeader.forEach((el) => {
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]');
 const tabContents = document.querySelectorAll('[data-content]');
+const srr = ScrollReveal({
+  distance: '45px',
+  duration: 2500,
+  reset: true,
+});
+
 tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.target);
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove('qualification__active');
-        });
-        target.classList.add('qualification__active');
-        tabs.forEach(tab => {
-            tab.classList.remove('qualification__active');
-        });
-        tab.classList.add('qualification__active');
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.target);
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('qualification__active');
     });
+    target.classList.add('qualification__active');
+    tabs.forEach(tab => {
+      tab.classList.remove('qualification__active');
+    });
+    tab.classList.add('qualification__active');
+    
+    if (target.classList.contains('qualification__active')) {
+      srr.reveal('.leftt', { delay: 250, origin: 'left', easing: 'ease-in-out' });
+      srr.reveal('.rightt', { delay: 250, origin: 'right', easing: 'ease-in-out' });
+    }
+  });
 });
 
 /*==================== SERVICES MODAL ====================*/
@@ -120,21 +160,21 @@ let swiperPortfolio = new Swiper('.portfolio__container' ,{
 });
 
 /*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper('.testimonial__container' ,{
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 48,
-  pagination:{
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-  breakpoints:{
-    568:{
-        slidesPerView: 2,
-      }
-  }
-});
+// let swiperTestimonial = new Swiper('.testimonial__container' ,{
+//   loop: true,
+//   grabCursor: true,
+//   spaceBetween: 48,
+//   pagination:{
+//     el: '.swiper-pagination',
+//     clickable: true,
+//     dynamicBullets: true,
+//   },
+//   breakpoints:{
+//     568:{
+//         slidesPerView: 2,
+//       }
+//   }
+// });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -201,3 +241,43 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme())
   localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+/*Animation for all page*/
+const sr = ScrollReveal ({
+  distance : '45px',
+  duration : 2500,
+  reset : true,
+})
+
+sr.reveal('.top',{ delay:250, origin:'top' , easing: 'ease-in-out'})
+sr.reveal('.left',{ delay:250, origin:'left' , easing: 'ease-in-out'})
+sr.reveal('.right',{ delay:250, origin:'right' , easing: 'ease-in-out'})
+sr.reveal('.bottom',{ delay:250, origin:'bottom' , easing: 'ease-in-out'})
+
+// sr.reveal('.home__data',{ delay:250, origin:'left' , easing: 'ease-in-out'})
+// sr.reveal('.home__scroll',{ delay:250, origin:'left' , easing: 'ease-in-out'})
+// sr.reveal('.home__img',{ delay:250, origin:'right' , easing: 'ease-in-out'})
+
+// sr.reveal('.about__img',{ delay:250, origin:'left' , easing: 'ease-in-out'})
+// sr.reveal('.about__data',{ delay:250, origin:'right' , easing: 'ease-in-out'})
+
+
+// sr.reveal('.leftt',{ delay:250, origin:'left' , easing: 'ease-in-out'})
+// sr.reveal('.rightt',{ delay:250, origin:'right' , easing: 'ease-in-out'})
+
+// sr.reveal('.gallery-image',{ delay:250, origin:'top' , easing: 'ease-in-out'})
+
+
+// sr.reveal('.container-products',{ delay:250, origin:'top' , easing: 'ease-in-out'})
+
+// sr.reveal('.review_card',{ delay:250, origin:'top' , easing: 'ease-in-out'})
+
+// sr.reveal('.team_box',{ delay:250, origin:'bottom' , easing: 'ease-in-out'})
+
+// sr.reveal('.box',{ delay:250, origin:'top' , easing: 'ease-in-out'})
+
+// sr.reveal('.before',{ delay:250, origin:'bottom' , easing: 'ease-in-out'})
+
+// sr.reveal('.footer-logo',{ delay:250, origin:'bottom' , easing: 'ease-in-out'})
+/*Animation for all page*/
