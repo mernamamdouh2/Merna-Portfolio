@@ -98,11 +98,11 @@ skillsHeader.forEach((el) => {
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]');
 const tabContents = document.querySelectorAll('[data-content]');
-const srr = ScrollReveal({
-  distance: '45px',
-  duration: 2500,
-  reset: true,
-});
+// const srr = ScrollReveal({
+//   distance: '45px',
+//   duration: 2500,
+//   reset: true,
+// });
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
@@ -116,10 +116,10 @@ tabs.forEach(tab => {
     });
     tab.classList.add('qualification__active');
     
-    if (target.classList.contains('qualification__active')) {
-      srr.reveal('.leftt', { delay: 250, origin: 'left', easing: 'ease-in-out' });
-      srr.reveal('.rightt', { delay: 250, origin: 'right', easing: 'ease-in-out' });
-    }
+    // if (target.classList.contains('qualification__active')) {
+    //   srr.reveal('.leftt', { delay: 250, origin: 'left', easing: 'ease-in-out' });
+    //   srr.reveal('.rightt', { delay: 250, origin: 'right', easing: 'ease-in-out' });
+    // }
   });
 });
 
@@ -254,30 +254,4 @@ sr.reveal('.top',{ delay:250, origin:'top' , easing: 'ease-in-out'})
 sr.reveal('.left',{ delay:250, origin:'left' , easing: 'ease-in-out'})
 sr.reveal('.right',{ delay:250, origin:'right' , easing: 'ease-in-out'})
 sr.reveal('.bottom',{ delay:250, origin:'bottom' , easing: 'ease-in-out'})
-
-// sr.reveal('.home__data',{ delay:250, origin:'left' , easing: 'ease-in-out'})
-// sr.reveal('.home__scroll',{ delay:250, origin:'left' , easing: 'ease-in-out'})
-// sr.reveal('.home__img',{ delay:250, origin:'right' , easing: 'ease-in-out'})
-
-// sr.reveal('.about__img',{ delay:250, origin:'left' , easing: 'ease-in-out'})
-// sr.reveal('.about__data',{ delay:250, origin:'right' , easing: 'ease-in-out'})
-
-
-// sr.reveal('.leftt',{ delay:250, origin:'left' , easing: 'ease-in-out'})
-// sr.reveal('.rightt',{ delay:250, origin:'right' , easing: 'ease-in-out'})
-
-// sr.reveal('.gallery-image',{ delay:250, origin:'top' , easing: 'ease-in-out'})
-
-
-// sr.reveal('.container-products',{ delay:250, origin:'top' , easing: 'ease-in-out'})
-
-// sr.reveal('.review_card',{ delay:250, origin:'top' , easing: 'ease-in-out'})
-
-// sr.reveal('.team_box',{ delay:250, origin:'bottom' , easing: 'ease-in-out'})
-
-// sr.reveal('.box',{ delay:250, origin:'top' , easing: 'ease-in-out'})
-
-// sr.reveal('.before',{ delay:250, origin:'bottom' , easing: 'ease-in-out'})
-
-// sr.reveal('.footer-logo',{ delay:250, origin:'bottom' , easing: 'ease-in-out'})
 /*Animation for all page*/
