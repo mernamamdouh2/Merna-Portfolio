@@ -3,55 +3,6 @@ const navMenu = document.getElementById('nav-menu'),
 navToggle = document. getElementById('nav-toggle'),
 navClose = document. getElementById('nav-close')
 
-
-/*===== CHANGE JOB TITLES =====*/
-const jobTitleElement = document.getElementById('jobTitle');
-const jobTitleElement1 = document.getElementById('jobTitle1');
-const jobTitles = ['UI/UX Designer','Branding Designer','Front-end Developer'];
-let currentIndex = 0;
-function changeJobTitle() {
-  jobTitleElement.classList.add('fade-out');
-  jobTitleElement1.classList.add('fade-out');
-  setTimeout(() => {
-    currentIndex = (currentIndex + 1) % jobTitles.length;
-    jobTitleElement.textContent = jobTitles[currentIndex];
-    jobTitleElement1.textContent = jobTitles[currentIndex];
-    jobTitleElement.classList.remove('fade-out');
-    jobTitleElement1.classList.remove('fade-out');
-  }, 500);
-}
-setInterval(changeJobTitle, 2000);
-// -----------------------------
-// function isInViewport(element) {
-//   const rect = element.getBoundingClientRect();
-//   return (
-//     rect.top >= 0 &&
-//     rect.left >= 0 &&
-//     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//   );
-// }
-
-// function animateOnScroll() {
-//   const homeSection = document.getElementById('home');
-//   const homeContent = document.querySelector('.home__content');
-//   const homeSocial = document.querySelector('.home__social');
-//   const homeData = document.querySelector('.home__data');
-//   const homeScroll = document.querySelector('.home__scroll');
-
-//   if (isInViewport(homeSection)) {
-//     homeContent.classList.add('animate');
-//     homeSocial.classList.add('animate');
-//     homeData.classList.add('animate');
-//     homeScroll.classList.add('animate');
-//   }
-// }
-
-// window.addEventListener('scroll', animateOnScroll);
-// window.addEventListener('resize', animateOnScroll);
-// window.addEventListener('load', animateOnScroll);
-// -----------------------------
-
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
@@ -244,12 +195,29 @@ themeButton.addEventListener('click', () => {
 
 
 /*Animation for all page*/
+/*===== CHANGE JOB TITLES =====*/
+const jobTitleElement = document.getElementById('jobTitle');
+const jobTitleElement1 = document.getElementById('jobTitle1');
+const jobTitles = ['UI/UX Designer','Branding Designer','Front-end Developer'];
+let currentIndex = 0;
+function changeJobTitle() {
+  jobTitleElement.classList.add('fade-out');
+  jobTitleElement1.classList.add('fade-out');
+  setTimeout(() => {
+    currentIndex = (currentIndex + 1) % jobTitles.length;
+    jobTitleElement.textContent = jobTitles[currentIndex];
+    jobTitleElement1.textContent = jobTitles[currentIndex];
+    jobTitleElement.classList.remove('fade-out');
+    jobTitleElement1.classList.remove('fade-out');
+  }, 500);
+}
+setInterval(changeJobTitle, 2000);
+
 const sr = ScrollReveal ({
   distance : '45px',
   duration : 2500,
   reset : true,
 })
-
 sr.reveal('.top',{ delay:250, origin:'top' , easing: 'ease-in-out'})
 sr.reveal('.left',{ delay:250, origin:'left' , easing: 'ease-in-out'})
 sr.reveal('.right',{ delay:250, origin:'right' , easing: 'ease-in-out'})
