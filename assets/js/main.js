@@ -15,7 +15,7 @@ if(navToggle){
 /* Validate if constant exists */
 if(navClose){
     navClose.addEventListener('click', () =>{
-         navMenu.classList.remove('show-menu')
+      navMenu.classList.remove('show-menu')
     })
 }
 
@@ -134,9 +134,9 @@ function scrollActive(){
   const scrollY = window.pageYOffset
 
   sections.forEach(current => {
-     const sectionHeight = current.offsetHeight
-     const sectionTop = current.offsetTop - 50;
-     const sectionId = current.getAttribute('id')
+    const sectionHeight = current.offsetHeight
+    const sectionTop = current.offsetTop - 50;
+    const sectionId = current.getAttribute('id')
 
     if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
       document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
@@ -198,7 +198,7 @@ themeButton.addEventListener('click', () => {
 /*===== CHANGE JOB TITLES =====*/
 const jobTitleElement = document.getElementById('jobTitle');
 const jobTitleElement1 = document.getElementById('jobTitle1');
-const jobTitles = ['UI/UX Designer','Branding Designer','Front-end Developer'];
+const jobTitles = ['UI Designer','Branding Designer','Front-end Developer','Wix Designer & Developer'];
 let currentIndex = 0;
 function changeJobTitle() {
   jobTitleElement.classList.add('fade-out');

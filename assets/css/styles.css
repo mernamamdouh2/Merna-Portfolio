@@ -400,6 +400,9 @@ img {
 .button--small{
   padding: .75rem 1rem;
 }
+.button-small{
+  padding: .75rem .5rem;
+}
 .button--link{
   padding: 0;
   background-color: transparent;
@@ -504,6 +507,12 @@ img {
 .skills__css{
   width: 80%;
 }
+.skills__Bootstrap{
+  width: 90%;
+}
+.skills__Tailwind{
+  width: 85%;
+}
 .skills__sass{
   width: 60%;
 }
@@ -511,16 +520,22 @@ img {
   width: 70%;
 }
 .skills__js{
-  width: 65%;
+  width: 80%;
 }
 .skills__react{
+  width: 75%;
+}
+.skills__wix{
+  width: 85%;
+}
+.skills__node{
   width: 60%;
 }
 .skills__python{
   width: 70%;
 }
 .skills__flask{
-  width: 70%;
+  width: 60%;
 }
 .skills__django{
   width: 60%;
@@ -534,6 +549,9 @@ img {
 .skills__sketch{
   width: 85%;
 }
+.skills__canva{
+  width: 90%;
+}
 .skills__photoshop{
   width: 70%;
 }
@@ -542,6 +560,9 @@ img {
 }
 .skills__premiere{
   width: 85%;
+}
+.skills__mongoDB{
+  width: 70%;
 }
 .skills__postgresql{
   width: 70%;
